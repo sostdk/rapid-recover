@@ -165,6 +165,19 @@ main {
     background-color: rgba(0, 0, 0, 0.4);
   }
 
+  #omLymfesystemet {
+    h4 { margin: 25px 0;font-weight: 100;}
+    ul {
+      margin:0;
+      li {
+          &:before {
+            content:"* ";
+            font-weight: 900;
+          }
+      }
+    }
+  }
+
   .athletes a { color:#fff !important; }
   .athletes h3 { color:#fff; }
   .athletes .athleteWrapper img {
