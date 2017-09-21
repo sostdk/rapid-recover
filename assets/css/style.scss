@@ -1,16 +1,16 @@
 @import "materialize-src/sass/materialize";
 @import "animate";
 
-html,body { overflow-x: hidden;}
-img {width:100%;height:auto;}
+html,body { overflow-x: hidden; }
+img { width:100%;height:auto; }
 /*Framework override*/
 nav { box-shadow:none; }
-nav .button-collapse {text-shadow: 0px 0px 8px #000;}
-nav i.material-icons {font-size: 3em !important;}
+nav .button-collapse { text-shadow: 0px 0px 8px #000; }
+nav i.material-icons { font-size: 3em !important; }
 .card .card-image .card-title {
   text-transform: uppercase;
   text-shadow: 1px 1px 6px rgba(0,0,0, 0.6); }
-.collapsible-header { line-height:1.5;}
+.collapsible-header { line-height:1.5; }
 #forhandlerOversigt {
   .row .col { padding: 0 2px; }
   .btn, .btn-large, .btn-flat {
@@ -34,7 +34,7 @@ nav i.material-icons {font-size: 3em !important;}
 }
 
 
-.clearBoth {clear: both;}
+.clearBoth { clear: both; }
 
 /*Mixins*/
 $bezierpath: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -49,8 +49,8 @@ header {
   .brand-logo {
     opacity:0;
     @include transition($bezierpath);
-    width:110px;
-    margin-top: 0px;
+    width:200px;
+    margin-top: -15px;
   }
 }
 
@@ -108,7 +108,7 @@ ul#locations li.hover a.btn {
   }
   .btn-large { height:68px;width:100%; }
   h6 {
-    margin:10px 0 0 0;padding:0;
+    margin:15px 0 0 0;padding:0;
     line-height: 1em;
     font-weight: 900;
     @media (max-width:600px){
@@ -147,7 +147,7 @@ main {
     min-height: 10vh;
     position:relative;
     z-index: -10;
-    background: url('../img/32Gi-Background.jpg') fixed no-repeat 50% 50%;
+    background: url('../img/Rapid-Recover-Background.jpg') fixed no-repeat 50% 140%;
     background-size: cover;
     color:#000;
     img {
@@ -177,6 +177,23 @@ main {
       }
     }
   }
+
+  #features {
+    .feature-card {
+      img {
+        padding: 0 20%;
+      }
+      ul {
+        li {
+          text-align:center;
+          color:#dae0e4;
+
+          h5 {color:#ecf0f1;}
+        }
+      }
+    }
+  }
+
 
   .athletes a { color:#fff !important; }
   .athletes h3 { color:#fff; }
@@ -289,7 +306,6 @@ footer {
     display: none !important;
 }
 
-
 .closed {
   .vertical {
     transition: all 0.5s ease-in-out;
@@ -302,7 +318,7 @@ footer {
   }
 }
 
-.opened {
+.active {
   opacity: 1;
   .vertical {
     transition: all 0.5s ease-in-out;
@@ -321,7 +337,6 @@ footer {
     font-size: 1em;
     opacity: 1;
 }
-
 
 .circle-plus .circle .horizontal {
     position: absolute;
